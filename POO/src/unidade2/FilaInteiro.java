@@ -1,41 +1,43 @@
 package unidade2;
+
 import java.util.LinkedList;
 
 public class FilaInteiro {
-	
-	private LinkedList<Integer> lista;
-	
-	public FilaInteiro() {
-		lista = new LinkedList<Integer>();
+	private LinkedList<Integer> fila;
+
+	public FilaInteiro () {
+		fila = new LinkedList<Integer>();
 	}
 	
-	
-	public boolean eVazia() {
-		return lista.isEmpty();
+	// eVazia
+	public boolean isEmpty() {
+		return fila.isEmpty();
 	}
 	
-	
-	public void inserir(int num) {
-		 lista.addLast(num);
+	// Enfileirar
+	public void enqueue (int num) {
+		fila.addLast(num);
 	}
 	
-	public int remover() {
-		if(this.lista.isEmpty()) {
-			return 0;
+	// Desenfileirar
+	public Integer dequeue () {
+		if (fila.isEmpty()) {
+			return null;
 		}
-		return lista.removeFirst();
+		return fila.removeFirst();
 	}
 	
-	public int tamanho() {
-		return lista.size();
-	}
-	
-	public int primeiro() {
-		if(lista.isEmpty()) {
-			return 0;
+	// Primeiro da fila
+	public Integer peek() {
+		if (fila.isEmpty()) {
+			return null;
 		}
-		return lista.getFirst();
+		return fila.getFirst();
 	}
 	
+	// Tamanho da fila
+	public int size () {
+		return fila.size();
+	}
 
 }

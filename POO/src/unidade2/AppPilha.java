@@ -8,7 +8,7 @@ public class AppPilha {
 		Scanner scan = new Scanner(System.in);
 		PilhaInteiro pilha = new PilhaInteiro();
 		int num;
-		System.out.println("Bem- vindo ao App para criar pilhas!");
+		System.out.println("Bem- vindo ao AppPilha!");
 		
 		do {
 			System.out.println("Digite um número inteiro: ");
@@ -34,7 +34,14 @@ public class AppPilha {
 			int remove = pilha.desempilhar();
 			System.out.println(remove);
 		}
-		System.out.println("App encerrado!");
+		
+		
+		if(pilha.eVazia()) {
+			System.out.println("A pilha está vazia !");
+		}else {
+			System.out.println("Ainda pilha ainda possuem elementos");
+		}
+		System.out.println("Encerrando aplicativo! Volte sempre =) ");
 		
 		scan.close();
 		

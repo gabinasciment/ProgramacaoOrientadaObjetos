@@ -3,45 +3,41 @@ package unidade2;
 import java.util.LinkedList;
 
 public class PilhaInteiro {
-	//corrigir sobre é vazia e validação
-	private LinkedList<Integer> lista;
+	private LinkedList<Integer> pilha;
 	
-	//construtor
-	public PilhaInteiro() {
-		lista = new LinkedList<Integer>();
+	public PilhaInteiro () {
+		this.pilha = new LinkedList<Integer>();
 	}
 	
-	
-	
-	public boolean eVazia() {
-		return lista.isEmpty();
+	// eVazia
+	public boolean isEmpty() {
+		return this.pilha.isEmpty();
 	}
 	
-	
-	
-	public void empilhar(int valor) {
-		lista.addLast(valor);
+	// empilhar
+	public void push (int num) {
+		this.pilha.addFirst(num);
 	}
 	
-	
-	//topo está no final da lista 
-	public int desempilhar() {
-		return lista.removeLast();
+	// desempilhar
+	public Integer pop() {
+		if (this.pilha.isEmpty()) {
+			return null;
+		}
+		return this.pilha.removeFirst();
 	}
 	
-	
-	public int tamanho() {
-		return lista.size();
+	// topo da pilha
+	public Integer top() {
+		if (this.pilha.isEmpty()) {
+			return null;
+		}
+		return this.pilha.getFirst();
 	}
 	
-	
-	//como o topo fica por ultimo
-	public int topo() {
-		return lista.getLast();
+	// tamanho da pilha
+	public int size() {
+		return this.pilha.size();
 	}
-	
-	
-	
-	
 
 }

@@ -8,7 +8,7 @@ public class AppFila {
 		FilaInteiro fila = new FilaInteiro();
 		int num;
 		
-		System.out.println("Bem- vindo ao AppFila");
+		System.out.println("Bem- vindo ao AppFila!");
 		
 		do {
 			System.out.println("Digite um valor inteiro: ");
@@ -34,7 +34,13 @@ public class AppFila {
 			System.out.println(remove);
 		}
 		
-		System.out.println("App encerrado ! =)");
+		if(fila.eVazia()) {
+			System.out.println("A fila se encontra vazia!");
+		}else {
+			System.out.println("O fila ainda possui elementos");
+		}
+		
+		System.out.println("Programa encerrado! Volte sempre =)");
 		
 		scan.close();
 		
