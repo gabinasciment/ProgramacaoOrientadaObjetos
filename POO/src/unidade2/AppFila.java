@@ -16,25 +16,25 @@ public class AppFila {
 			num = scan.nextInt();
 			
 			if(num != 0) {
-				fila.inserir(num);
+				fila.enqueue(num);
 			}
 			
 		}while(num != 0);
 		
 		
-		if(!fila.eVazia()) {
-			System.out.println("Primeiro elemento da fila: " + fila.primeiro());
+		if(!fila.isEmpty()) {
+			System.out.println("Primeiro elemento da fila: " + fila.peek());
 		}else {
 			System.out.println("A fila está vazia ");
 		}
 		
 		System.out.println("Itens removidos da fila");
-		while(!fila.eVazia()) {
-			int remove = fila.remover();
+		while(!fila.isEmpty()) {
+			int remove = fila.dequeue();
 			System.out.println(remove);
 		}
 		
-		if(fila.eVazia()) {
+		if(fila.isEmpty()) {
 			System.out.println("A fila se encontra vazia!");
 		}else {
 			System.out.println("O fila ainda possui elementos");
