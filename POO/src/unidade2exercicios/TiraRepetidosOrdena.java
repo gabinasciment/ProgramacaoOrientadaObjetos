@@ -8,6 +8,7 @@ import java.util.*;
  *     das duas listas originais, sem repetição e ordenados. 
  *     Ao final, mostre as três listas na tela. 
  *     Por exemplo: [3,6,5,3,7] [2,9,7,5,1] ==> [1,2,3,5,6,7,9]
+ *     pode fazer com Trreset
  */
 public class TiraRepetidosOrdena {
 	private static Scanner scan = new Scanner(System.in);
