@@ -3,7 +3,7 @@ package unidade2exercicios;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class inverterLista {
+public class exercicio02 {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);

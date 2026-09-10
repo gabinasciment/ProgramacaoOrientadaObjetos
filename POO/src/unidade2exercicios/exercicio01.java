@@ -10,7 +10,7 @@ import java.util.*;
  *     Por exemplo: [3,6,5,3,7] [2,9,7,5,1] ==> [1,2,3,5,6,7,9]
  *     pode fazer com Trreset
  */
-public class TiraRepetidosOrdena {
+public class exercicio01 {
 	private static Scanner scan = new Scanner(System.in);
 
 	public static void main(String[] args) {

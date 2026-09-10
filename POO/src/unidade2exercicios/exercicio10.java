@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import unidade2.FilaInteiro;
 
-public class RemovePares {
+public class exercicio10 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		FilaInteiro fila = new FilaInteiro();
