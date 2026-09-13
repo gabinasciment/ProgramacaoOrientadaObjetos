@@ -39,14 +39,14 @@ public class exercicio02 {
 		}
 
 	}
-	
+
+	// mais fácil- usar o add first
 	public static void inverteListaOutraForma(ArrayList<Integer> list, ArrayList<Integer> listainvertida) {
-		for(int i = 0; i < list.size();i++) {
-			//pois quando ele pegar o primeiro ele pega e coloca na frente do primeiro, logo inverte
+		for (int i = 0; i < list.size(); i++) {
+			// pois quando ele pegar o primeiro ele pega e coloca na frente do primeiro,
+			// logo inverte
 			listainvertida.addFirst(list.get(i));
 		}
 	}
-	
-	
 
 }

@@ -20,7 +20,7 @@ public class exercicio01 {
 
 		preencher(lista1);
 		preencher(lista2);
-		lista3 = unir(lista1, lista2);
+		lista3 = unirListaOrdenada(lista1, lista2);
 
 		System.out.println("LISTA 1");
 		System.out.println(lista1);
@@ -48,6 +48,17 @@ public class exercicio01 {
 		aux = new TreeSet<Integer>(lista1);
 		aux.addAll(lista2);
 
+		lista = new ArrayList<Integer>(aux);
+		return lista;
+	}
+
+	private static ArrayList<Integer> unirListaOrdenada(ArrayList<Integer> lista1, ArrayList<Integer> lista2) {
+		TreeSet<Integer> aux;
+		ArrayList<Integer> lista;
+		// passa a lista para o treeSet
+		aux = new TreeSet<Integer>(lista1);
+		aux.addAll(lista2);
+		// passa o treeSet para arrayList
 		lista = new ArrayList<Integer>(aux);
 		return lista;
 	}
