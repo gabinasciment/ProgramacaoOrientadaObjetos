@@ -1,12 +1,10 @@
 package unidade4;
 
 public interface iCalculoGeometrico {
-	
-	public void desenhar();
-	public void redimensionar(double r);
+
+	public String desenhar();
+	public void redimensionar(double fator);
 	public double calcularArea();
 	public double calcularPerimetro();
-	
-	
 
 }

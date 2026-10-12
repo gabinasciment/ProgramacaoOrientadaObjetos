@@ -15,17 +15,29 @@ public class Circulo extends ElementoGeometrico {
 	public void setRaio(double raio) {
 		this.raio = raio;
 	}
-	
-	public void desenhar() {
-		System.out.println("A forma está sendo desenhada");
+
+	@Override
+	public String desenhar() {
+		return "O Círculo está sendo desenhado";
 	}
-	
-	public void redimensionar(double r) { this.setRaio(r);}
-	public double calcularArea() { return Math.PI * (Math.pow(this.getRaio(),2));}
-	public double calcularPerimetro() {return  2 * (Math.PI) * this.getRaio();}
-	
-	
 
-	
+	@Override
+	public void redimensionar(double fator) {
+		this.raio *= fator;
+	}
 
+	@Override
+	public double calcularArea() {
+		return Math.PI * Math.pow(this.raio, 2);
+	}
+
+	@Override
+	public double calcularPerimetro() {
+		return 2 * Math.PI * this.raio;
+	}
+
+	@Override
+	public String toString() {
+		return "Círculo - " + super.toString() + ", Raio: " + raio;
+	}
 }
