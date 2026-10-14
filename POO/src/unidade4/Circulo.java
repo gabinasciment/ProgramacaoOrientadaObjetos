@@ -16,10 +16,6 @@ public class Circulo extends ElementoGeometrico {
 		this.raio = raio;
 	}
 
-	@Override
-	public String desenhar() {
-		return "O Círculo está sendo desenhado";
-	}
 
 	@Override
 	public void redimensionar(double fator) {

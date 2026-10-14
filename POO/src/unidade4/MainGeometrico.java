@@ -26,15 +26,19 @@ public class MainGeometrico {
 			if (forma instanceof Circulo) {
 				Circulo c = (Circulo) forma;
 				System.out.println("Raio antes: " + c.getRaio());
-				c.redimensionar(2); // dobra o raio
+				c.redimensionar(2);
+				
 				System.out.println("Raio depois: " + c.getRaio());
 				System.out.println();
 			}
 		}
+		
+		
 
 		System.out.println("===== DESENHANDO TODAS AS FIGURAS =====");
 		for (ElementoGeometrico forma : formas) {
 			System.out.println(forma.desenhar());
 		}
 	}
+	
 }

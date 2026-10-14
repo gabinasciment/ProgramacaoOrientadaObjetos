@@ -29,10 +29,10 @@ public abstract class ElementoGeometrico implements iCalculoGeometrico {
 	public String toString() {
 		return "Posição: (" + x + ", " + y + ")";
 	}
-
-	// Métodos da interface permanecem abstratos
-	public abstract String desenhar();
-	public abstract void redimensionar(double fator);
-	public abstract double calcularArea();
-	public abstract double calcularPerimetro();
+	
+	///feito assim não precisa sobrescrever o método nas outras classes
+	public String desenhar() {
+		return this.getClass().getSimpleName() + " está sendo desenhado";
+	}
+	
 }

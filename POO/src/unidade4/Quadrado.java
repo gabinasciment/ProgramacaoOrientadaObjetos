@@ -5,11 +5,17 @@ public class Quadrado extends Retangulo {
 	public Quadrado(double x, double y, double lado) {
 		super(x, y, lado, lado);
 	}
-
-	@Override
-	public String desenhar() {
-		return "O Quadrado está sendo desenhado";
+	
+	public void setLado1(double novo) {
+		this.setLado1(novo);
+		this.setLado2(novo);
 	}
+	public void setLado2(double novo) {
+		this.setLado1(novo);
+		this.setLado2(novo);
+	}
+
+	
 
 	@Override
 	public void redimensionar(double fator) {

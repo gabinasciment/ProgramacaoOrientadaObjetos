@@ -25,10 +25,7 @@ public class Retangulo extends ElementoGeometrico {
 		this.lado2 = lado2;
 	}
 
-	@Override
-	public String desenhar() {
-		return "O Retângulo está sendo desenhado";
-	}
+
 
 	@Override
 	public void redimensionar(double fator) {
